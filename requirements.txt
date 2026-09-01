@@ -1,0 +1,14 @@
+# Core – nhẹ, đủ chạy với Tesseract
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+PyMuPDF>=1.23.0
+pytesseract>=0.3.10
+Pillow>=10.0.0
+openpyxl>=3.1.0
+opencv-python-headless>=4.8.0
+gradio>=4.0.0
+
+# KHÔNG cài sẵn Paddle (nặng). Chỉ cài khi cần độ chính xác cao hơn:
+#   .venv\Scripts\pip install paddlepaddle -i https://www.paddlepaddle.org.cn/packages/stable/cpu/
+#   .venv\Scripts\pip install paddleocr
