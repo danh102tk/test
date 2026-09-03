@@ -1,0 +1,172 @@
+{
+  "document_id": "81e087b1-4608-4550-8a85-415b146ec1ea",
+  "filename": "bckq.pdf",
+  "processed_at": "2026-09-03T11:27:25.336846+00:00",
+  "page_count": 2,
+  "processing_engine": "pymupdf+tesseract_ocr",
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 1150,
+      "has_native_text": true,
+      "classification": "UNKNOWN",
+      "confidence": 0.45,
+      "detected_form_number": null,
+      "keywords": []
+    },
+    {
+      "page": 2,
+      "text_length": 1310,
+      "has_native_text": true,
+      "classification": "FORM_8014",
+      "confidence": 0.99,
+      "detected_form_number": "8014",
+      "keywords": [
+        "FORM"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G001",
+      "type": "UNKNOWN",
+      "pages": [
+        1
+      ],
+      "confidence": 0.45,
+      "continuation": false
+    },
+    {
+      "group_id": "G002",
+      "type": "FORM_8014",
+      "pages": [
+        2
+      ],
+      "confidence": 0.99,
+      "continuation": false
+    }
+  ],
+  "extracted_records": [
+    {
+      "group_id": "G001",
+      "type": "UNKNOWN",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "group_id": "G002",
+      "type": "FORM_8014",
+      "pages": [
+        2
+      ]
+    }
+  ],
+  "employees": [
+    {
+      "full_name": "Hồ Xuân Dũng",
+      "staff_id": "VAE01749",
+      "department": "",
+      "attendance": 70.0,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 2,
+      "confidence": 0.95,
+      "raw_text": "1 H6 Xuan Ding VAE01749 NTHCM 70.00 1 No Completed N/A"
+    },
+    {
+      "full_name": "Phạm Quang Duy",
+      "staff_id": "VAE04011",
+      "department": "",
+      "attendance": 70.0,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 2,
+      "confidence": 0.95,
+      "raw_text": "2 Pham Quang Duy VAE04011 NTHCM 70.00 1 No Completed N/A"
+    },
+    {
+      "full_name": "Nguyễn Ngọc Tân",
+      "staff_id": "VAE04012",
+      "department": "",
+      "attendance": 70.0,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 2,
+      "confidence": 0.95,
+      "raw_text": "3 Nguyén Ngoc Tan VAE04012 NTHCM 70.00 1 0 No Completed N/A"
+    },
+    {
+      "full_name": "Đỗ Minh Khôi",
+      "staff_id": "VAE04013",
+      "department": "",
+      "attendance": 70.0,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 2,
+      "confidence": 0.95,
+      "raw_text": "4 D6 Minh Khéi VAE04013 NTHCM 70.00 1 0) No Completed N/A"
+    },
+    {
+      "full_name": "Lê Văn Sơn",
+      "staff_id": "VAE04014",
+      "department": "",
+      "attendance": 70.0,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 2,
+      "confidence": 0.95,
+      "raw_text": "5 Lé Van Son VAE04014 NTHCM 70.00 1 0 No Completed N/A"
+    }
+  ],
+  "header": {
+    "form_number": "8014",
+    "report_title": "TRAINING COURSE REPORT",
+    "course_code": "Title: B787 Aijrcraft Structure Repair | Code: ASRT-B787- Duration: From 03/08/2026 to Location: Phong Dao tao phia",
+    "location": "Title: B787 Aijrcraft Structure Repair | Code: ASRT-B787- Duration: From 03/08/2026 to Location: Phong Dao tao phia",
+    "dates_found": "21/08/2026, 03/08/2026, 17/08/2026"
+  },
+  "issues": [
+    {
+      "page": 2,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01749 found in employee lookup file: Hồ Xuân Dũng"
+    },
+    {
+      "page": 2,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE04011 found in employee lookup file: Phạm Quang Duy"
+    },
+    {
+      "page": 2,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE04012 found in employee lookup file: Nguyễn Ngọc Tân"
+    },
+    {
+      "page": 2,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE04013 found in employee lookup file: Đỗ Minh Khôi"
+    },
+    {
+      "page": 2,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE04014 found in employee lookup file: Lê Văn Sơn"
+    }
+  ],
+  "overall_confidence": 0.82
+}

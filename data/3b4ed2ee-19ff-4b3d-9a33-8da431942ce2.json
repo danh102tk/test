@@ -1,0 +1,766 @@
+{
+  "document_id": "3b4ed2ee-19ff-4b3d-9a33-8da431942ce2",
+  "filename": "cut.pdf",
+  "processed_at": "2026-09-03T11:20:17.599183+00:00",
+  "page_count": 5,
+  "processing_engine": "pymupdf+tesseract_ocr",
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 1157,
+      "has_native_text": true,
+      "classification": "UNKNOWN",
+      "confidence": 0.45,
+      "detected_form_number": null,
+      "keywords": []
+    },
+    {
+      "page": 2,
+      "text_length": 970,
+      "has_native_text": true,
+      "classification": "FORM_8014",
+      "confidence": 0.99,
+      "detected_form_number": "8014",
+      "keywords": [
+        "FORM"
+      ]
+    },
+    {
+      "page": 3,
+      "text_length": 425,
+      "has_native_text": true,
+      "classification": "FORM_8014",
+      "confidence": 0.99,
+      "detected_form_number": "8014",
+      "keywords": [
+        "FORM"
+      ]
+    },
+    {
+      "page": 4,
+      "text_length": 937,
+      "has_native_text": true,
+      "classification": "FORM_8014",
+      "confidence": 0.99,
+      "detected_form_number": "8014",
+      "keywords": [
+        "FORM"
+      ]
+    },
+    {
+      "page": 5,
+      "text_length": 1105,
+      "has_native_text": true,
+      "classification": "FORM_8014",
+      "confidence": 0.99,
+      "detected_form_number": "8014",
+      "keywords": [
+        "FORM"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G001",
+      "type": "UNKNOWN",
+      "pages": [
+        1
+      ],
+      "confidence": 0.45,
+      "continuation": false
+    },
+    {
+      "group_id": "G002",
+      "type": "FORM_8014",
+      "pages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "confidence": 0.99,
+      "continuation": true
+    }
+  ],
+  "extracted_records": [
+    {
+      "group_id": "G001",
+      "type": "UNKNOWN",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "group_id": "G002",
+      "type": "FORM_8014",
+      "pages": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "employees": [
+    {
+      "full_name": "Nguyễn Thanh Tú",
+      "staff_id": "VAE01180",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 2,
+      "confidence": 0.95,
+      "raw_text": "Nguyén Thanh Tu VAE01180 | NgTHCM Completed"
+    },
+    {
+      "full_name": "Phạm Quốc Hưng",
+      "staff_id": "VAE03135",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 3,
+      "confidence": 0.95,
+      "raw_text": "26 |Pham Quéc Hung VAE03135 | NgTHCM"
+    },
+    {
+      "full_name": "Đào Văn Hoằng",
+      "staff_id": "VAE03140",
+      "department": "",
+      "attendance": 2.07,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 3,
+      "confidence": 0.95,
+      "raw_text": "27 VAE03140 | NgTHCM 2.07"
+    },
+    {
+      "full_name": "Phan Vũ Lợi",
+      "staff_id": "VAE01184",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 3,
+      "confidence": 0.95,
+      "raw_text": "31 |Phan Vo Loi VAE01184 N/A"
+    },
+    {
+      "full_name": "Nguyễn Thái Hoàng",
+      "staff_id": "VAE01245",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 3,
+      "confidence": 0.95,
+      "raw_text": "35 |Nguyén Thai Hoang | VAE01245| NgTHCM Completed"
+    },
+    {
+      "full_name": "Phạm Ngọc Việt",
+      "staff_id": "VAE01241",
+      "department": "",
+      "attendance": 3.1,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 4,
+      "confidence": 0.95,
+      "raw_text": "36 |Pham Ngoc Viét VAE01241 | NgTHCM 3.10"
+    },
+    {
+      "full_name": "Nguyễn Đăng Vĩnh Quang",
+      "staff_id": "VAE02602",
+      "department": "",
+      "attendance": 1.23,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 4,
+      "confidence": 0.95,
+      "raw_text": "Nouyen Bang Vinh | vaE02602 | NgTHCM 1.23"
+    },
+    {
+      "full_name": "Nguyễn Văn Vững",
+      "staff_id": "VAE03009",
+      "department": "",
+      "attendance": 1.29,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 4,
+      "confidence": 0.95,
+      "raw_text": "50 |Nguyén Van Vitng VAE03009 NgTHCM 1.29"
+    },
+    {
+      "full_name": "Đặng Trần Quý",
+      "staff_id": "VAE02985",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 4,
+      "confidence": 0.95,
+      "raw_text": "Dang Tran Quy VAE02985 | NgTHCM No Completed"
+    },
+    {
+      "full_name": "Ngô Thái Hoàng",
+      "staff_id": "VAE02486",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 4,
+      "confidence": 0.95,
+      "raw_text": "Ng6 Thai Hoang VAE02486 NgTHCM No Completed"
+    },
+    {
+      "full_name": "Trần Nam Giang",
+      "staff_id": "VAE02253",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 4,
+      "confidence": 0.95,
+      "raw_text": "Tran Nam Giang VAE02253 NgTHCM No Completed"
+    },
+    {
+      "full_name": "Lê Minh Lý",
+      "staff_id": "VAE02605",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 4,
+      "confidence": 0.95,
+      "raw_text": "Lé Minh Ly VAE02605 | NgTHCM No | Completed"
+    },
+    {
+      "full_name": "Bùi An Bình",
+      "staff_id": "VAE02463",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 4,
+      "confidence": 0.95,
+      "raw_text": "Bui An Binh VAE02463 NgTHCM No Completed"
+    },
+    {
+      "full_name": "Trần Văn Khoa",
+      "staff_id": "VAE02468",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 4,
+      "confidence": 0.95,
+      "raw_text": "Tran Van Khoa VAE02468 | NgTHCM"
+    },
+    {
+      "full_name": "Nguyễn Trần Tuấn Anh",
+      "staff_id": "VAE02996",
+      "department": "",
+      "attendance": 3.14,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 4,
+      "confidence": 0.95,
+      "raw_text": "Nguyén Tran Tuan Anh| VAE02996 | NgTHCM 3.14 Completed"
+    },
+    {
+      "full_name": "Võ Thành Long",
+      "staff_id": "VAE02603",
+      "department": "",
+      "attendance": 1.53,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 4,
+      "confidence": 0.95,
+      "raw_text": "V6 Thanh Long VAE02603 NgTHCM 1.53 Completed"
+    },
+    {
+      "full_name": "Hoàng Tử Đồng",
+      "staff_id": "VAE02480",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Hoang Tt Dong VAE02480 NgTHCM Completed"
+    },
+    {
+      "full_name": "Nguyễn Văn Chiến",
+      "staff_id": "VAE02590",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Nguyén Van Chién | VAE02590 | NgTHCM"
+    },
+    {
+      "full_name": "Lê Hữu Trình",
+      "staff_id": "VAE03012",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Lé Hou Trinh VAE03012 | NgTHCM"
+    },
+    {
+      "full_name": "Nguyễn Lưu Cảnh Hưng",
+      "staff_id": "VAE03258",
+      "department": "",
+      "attendance": 1.17,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "das Lau Cann VAE03258 | NgTHCM 1.17 Completed| N/A"
+    },
+    {
+      "full_name": "Nguyễn Ngọc Linh",
+      "staff_id": "VAE03255",
+      "department": "",
+      "attendance": 5.24,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Nguyén Ngoc Linh VAE03255 NgTHCM 5.24 Completed N/A"
+    },
+    {
+      "full_name": "Đào Trọng Lý",
+      "staff_id": "VAE01196",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Bao Trong Ly VAE01196 | NgTHCM"
+    },
+    {
+      "full_name": "Nguyễn Thành Long",
+      "staff_id": "VAE01342",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "70 |Nguyén Thanh Long | VAE01342 | NgTHCM"
+    },
+    {
+      "full_name": "Nguyễn Đình Điện",
+      "staff_id": "VAE01123",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "71 |Nguyén Binh Bién VAE01123 | NgTHCM"
+    },
+    {
+      "full_name": "Bùi Văn Đức",
+      "staff_id": "VAE01204",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Bui Van Dwr VAE01204 | NgTHCM"
+    },
+    {
+      "full_name": "Nguyễn Anh Tuấn",
+      "staff_id": "VAE01217",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Nguyén Anh Tuan VAE01217 | NgTHCM"
+    },
+    {
+      "full_name": "Lê Văn Cường",
+      "staff_id": "VAE01333",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Lé Van Cuong VAE01333 | NgTHCM"
+    },
+    {
+      "full_name": "Đào Anh Tuấn",
+      "staff_id": "VAE01334",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Dao Anh Tuan VAE01334 | NgTHCM"
+    },
+    {
+      "full_name": "Đỗ Văn Công",
+      "staff_id": "VAE01294",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Dé Van Céng VAE01294 | NgTHCM"
+    },
+    {
+      "full_name": "Nguyễn Hữu Châu",
+      "staff_id": "VAE01243",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Nguyén Hiru Chau VAE01243 | NgTHCM"
+    },
+    {
+      "full_name": "Nghị Anh Thảo",
+      "staff_id": "VAE01187",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "79 |Nghi Anh Thao VAE01187 | NgTHCM"
+    },
+    {
+      "full_name": "Nguyễn Văn Nghiệp",
+      "staff_id": "VAE01305",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Nguyén Van Nghiép | VAE01305 | NgTHCM"
+    },
+    {
+      "full_name": "Trần Duy Hoàng Thiện",
+      "staff_id": "VAE02941",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Tran Duy Hoang Thién | VAE02941 | NgTHCM"
+    },
+    {
+      "full_name": "Vũ Quốc Phòng",
+      "staff_id": "VAE00720",
+      "department": "",
+      "attendance": null,
+      "exam_pass": null,
+      "discipline_status": "",
+      "course_result": "",
+      "certificate_no": "",
+      "source_page": 5,
+      "confidence": 0.95,
+      "raw_text": "Vi Quéc Phong VAE00720 | NgTHCM"
+    }
+  ],
+  "header": {
+    "form_number": "8014",
+    "report_title": "TRAINING COURSE REPORT",
+    "course_code": "Interconnection Systems) - Basic Recurrent} Code: EWIS-BAS-R/2501/OL",
+    "location": "Duration: From 14/11/2025 to Location: VNA E-learning",
+    "dates_found": [
+      "24/11/2025",
+      "14/11/2025",
+      "21/11/2025"
+    ]
+  },
+  "issues": [
+    {
+      "page": 2,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01180 found in employee lookup file: Nguyễn Thanh Tú"
+    },
+    {
+      "page": 3,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE03135 found in employee lookup file: Phạm Quốc Hưng"
+    },
+    {
+      "page": 3,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE03140 found in employee lookup file: Đào Văn Hoằng"
+    },
+    {
+      "page": 3,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01184 found in employee lookup file: Phan Vũ Lợi"
+    },
+    {
+      "page": 3,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01245 found in employee lookup file: Nguyễn Thái Hoàng"
+    },
+    {
+      "page": 4,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01241 found in employee lookup file: Phạm Ngọc Việt"
+    },
+    {
+      "page": 4,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE02602 found in employee lookup file: Nguyễn Đăng Vĩnh Quang"
+    },
+    {
+      "page": 4,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE03009 found in employee lookup file: Nguyễn Văn Vững"
+    },
+    {
+      "page": 4,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE02985 found in employee lookup file: Đặng Trần Quý"
+    },
+    {
+      "page": 4,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE02486 found in employee lookup file: Ngô Thái Hoàng"
+    },
+    {
+      "page": 4,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE02253 found in employee lookup file: Trần Nam Giang"
+    },
+    {
+      "page": 4,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE02605 found in employee lookup file: Lê Minh Lý"
+    },
+    {
+      "page": 4,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE02463 found in employee lookup file: Bùi An Bình"
+    },
+    {
+      "page": 4,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE02468 found in employee lookup file: Trần Văn Khoa"
+    },
+    {
+      "page": 4,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE02996 found in employee lookup file: Nguyễn Trần Tuấn Anh"
+    },
+    {
+      "page": 4,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE02603 found in employee lookup file: Võ Thành Long"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE02480 found in employee lookup file: Hoàng Tử Đồng"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE02590 found in employee lookup file: Nguyễn Văn Chiến"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE03012 found in employee lookup file: Lê Hữu Trình"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE03258 found in employee lookup file: Nguyễn Lưu Cảnh Hưng"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE03255 found in employee lookup file: Nguyễn Ngọc Linh"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01196 found in employee lookup file: Đào Trọng Lý"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01342 found in employee lookup file: Nguyễn Thành Long"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01123 found in employee lookup file: Nguyễn Đình Điện"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01204 found in employee lookup file: Bùi Văn Đức"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01217 found in employee lookup file: Nguyễn Anh Tuấn"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01333 found in employee lookup file: Lê Văn Cường"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01334 found in employee lookup file: Đào Anh Tuấn"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01294 found in employee lookup file: Đỗ Văn Công"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01243 found in employee lookup file: Nguyễn Hữu Châu"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01187 found in employee lookup file: Nghị Anh Thảo"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE01305 found in employee lookup file: Nguyễn Văn Nghiệp"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE02941 found in employee lookup file: Trần Duy Hoàng Thiện"
+    },
+    {
+      "page": 5,
+      "field": "full_name",
+      "severity": "info",
+      "message": "Staff ID VAE00720 found in employee lookup file: Vũ Quốc Phòng"
+    }
+  ],
+  "overall_confidence": 0.98
+}

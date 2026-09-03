@@ -1,0 +1,60 @@
+{
+  "document_id": "a5acf3af-0fec-4115-8d3c-98f83b5db7ac",
+  "filename": "bckq.pdf",
+  "processed_at": "2026-09-03T11:07:06.124809+00:00",
+  "page_count": 2,
+  "processing_engine": "local_pymupdf",
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 0,
+      "has_native_text": false,
+      "classification": "UNKNOWN",
+      "confidence": 0.1,
+      "detected_form_number": null,
+      "keywords": []
+    },
+    {
+      "page": 2,
+      "text_length": 0,
+      "has_native_text": false,
+      "classification": "UNKNOWN",
+      "confidence": 0.1,
+      "detected_form_number": null,
+      "keywords": []
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G001",
+      "type": "UNKNOWN",
+      "pages": [
+        1,
+        2
+      ],
+      "confidence": 0.1,
+      "continuation": true
+    }
+  ],
+  "extracted_records": [
+    {
+      "group_id": "G001",
+      "type": "UNKNOWN",
+      "pages": [
+        1,
+        2
+      ]
+    }
+  ],
+  "employees": [],
+  "header": {},
+  "issues": [
+    {
+      "page": null,
+      "field": null,
+      "severity": "warning",
+      "message": "No employee rows with recognizable Staff ID were found in FORM 8014 pages."
+    }
+  ],
+  "overall_confidence": 0.1
+}
