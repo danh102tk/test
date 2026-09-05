@@ -1,0 +1,188 @@
+{
+  "document_id": "f2758f6f-2911-411c-a3eb-8a3ef8363692",
+  "filename": "bckq.pdf",
+  "processed_at": "2026-09-05T06:23:25.238267+00:00",
+  "page_count": 2,
+  "processing_engine": "paddle_ocr",
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 942,
+      "has_native_text": false,
+      "classification": "DECISION",
+      "confidence": 0.94,
+      "detected_form_number": null,
+      "keywords": [
+        "DECISION"
+      ],
+      "orientation": 0
+    },
+    {
+      "page": 2,
+      "text_length": 1259,
+      "has_native_text": false,
+      "classification": "FORM_8014",
+      "confidence": 0.99,
+      "detected_form_number": "8014",
+      "keywords": [
+        "FORM"
+      ],
+      "orientation": 0
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G001",
+      "type": "DECISION",
+      "pages": [
+        1
+      ],
+      "first_page": 1,
+      "last_page": 1,
+      "confidence": 0.94,
+      "continuation": false
+    },
+    {
+      "group_id": "G002",
+      "type": "FORM_8014",
+      "pages": [
+        2
+      ],
+      "first_page": 2,
+      "last_page": 2,
+      "confidence": 0.99,
+      "continuation": false
+    }
+  ],
+  "extracted_records": [
+    {
+      "group_id": "G001",
+      "type": "DECISION",
+      "pages": [
+        1
+      ],
+      "first_page": 1,
+      "last_page": 1
+    },
+    {
+      "group_id": "G002",
+      "type": "FORM_8014",
+      "pages": [
+        2
+      ],
+      "first_page": 2,
+      "last_page": 2
+    }
+  ],
+  "employees": [
+    {
+      "no": "1",
+      "full_name": "Ho Xuan Dung",
+      "staff_id": "VAE01749",
+      "department": "NTHCM",
+      "attendance_hours": 70.0,
+      "exam_pass": 1,
+      "exam_fail": 0,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "N/A",
+      "remark": "2",
+      "source_page": 2,
+      "confidence": 0.9,
+      "raw_text": "VAE01749"
+    },
+    {
+      "no": "2",
+      "full_name": "Pham Quang Duy",
+      "staff_id": "VAE04011",
+      "department": "NTHCM",
+      "attendance_hours": 70.0,
+      "exam_pass": 1,
+      "exam_fail": 0,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "N/A",
+      "remark": "3",
+      "source_page": 2,
+      "confidence": 0.9,
+      "raw_text": "VAE04011"
+    },
+    {
+      "no": "3",
+      "full_name": "Nguyen Ngoc Tan",
+      "staff_id": "VAE04012",
+      "department": "NTHCM",
+      "attendance_hours": 70.0,
+      "exam_pass": 1,
+      "exam_fail": 0,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "N/A",
+      "remark": "4",
+      "source_page": 2,
+      "confidence": 0.9,
+      "raw_text": "VAE04012"
+    },
+    {
+      "no": "4",
+      "full_name": "Do Minh Khoi",
+      "staff_id": "VAE04013",
+      "department": "NTHCM",
+      "attendance_hours": 70.0,
+      "exam_pass": 1,
+      "exam_fail": 0,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "N/A",
+      "remark": "5",
+      "source_page": 2,
+      "confidence": 0.9,
+      "raw_text": "VAE04013"
+    },
+    {
+      "no": "5",
+      "full_name": "Le Van Son",
+      "staff_id": "VAE04014",
+      "department": "NTHCM",
+      "attendance_hours": 70.0,
+      "exam_pass": 1,
+      "exam_fail": 0,
+      "discipline_status": "",
+      "course_result": "Completed",
+      "certificate_no": "N/A",
+      "remark": "Note:",
+      "source_page": 2,
+      "confidence": 0.9,
+      "raw_text": "VAE04014"
+    }
+  ],
+  "header": {
+    "form_number": "8014",
+    "title": "B787",
+    "dispatch_no": "ated 21/08/2026",
+    "code": "ASRT-B787-",
+    "location": "Phong Dao tao phia",
+    "dates_found": [
+      "21/08/2026",
+      "03/08/2026",
+      "17/08/2026"
+    ],
+    "duration_from": "03/08/2026",
+    "duration_to": "17/08/2026",
+    "total_participants": 5,
+    "training_hours": 70.0
+  },
+  "footer": {
+    "prepared_by": "Checked by",
+    "checked_by": "The trainee will be qualified as completed the course and/or"
+  },
+  "issues": [
+    {
+      "page": null,
+      "field": null,
+      "severity": "info",
+      "message": "PDF type detected: SCAN | Engine used: paddle_ocr"
+    }
+  ],
+  "overall_confidence": 0.98
+}

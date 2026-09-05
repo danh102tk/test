@@ -1,9 +1,28 @@
+# ============================================================
+# CORE – bắt buộc
+# ============================================================
 fastapi>=0.110,<1.0
 uvicorn[standard]>=0.27
 python-multipart>=0.0.9
 PyMuPDF>=1.24
 openpyxl>=3.1
 python-dotenv>=1.0
-pandas>=2.0.0
-# Optional: enable Google Document AI by installing/configuring this package
+pydantic>=2.0
+gradio>=4.0
+
+# ============================================================
+# OPTIONAL – PaddleOCR (RẤT KHUYẾN NGHỊ cho PDF scan)
+# ============================================================
+# Cài thêm:
+#   pip install paddlepaddle paddleocr
+# hoặc đầy đủ:
+#   pip install "paddleocr[doc-parser]"
+#
+# GPU:
+#   pip install paddlepaddle-gpu
+#   pip install paddleocr
+
+# ============================================================
+# OPTIONAL – Google Document AI
+# ============================================================
 # google-cloud-documentai>=2.30

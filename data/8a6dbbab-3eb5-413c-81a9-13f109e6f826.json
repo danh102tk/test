@@ -1,0 +1,191 @@
+{
+  "document_id": "8a6dbbab-3eb5-413c-81a9-13f109e6f826",
+  "filename": "bckq.pdf",
+  "processed_at": "2026-09-05T06:38:36.673489+00:00",
+  "page_count": 2,
+  "processing_engine": "paddle_ocr",
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 942,
+      "has_native_text": false,
+      "classification": "DECISION",
+      "confidence": 0.94,
+      "detected_form_number": null,
+      "keywords": [
+        "DECISION"
+      ],
+      "orientation": 0
+    },
+    {
+      "page": 2,
+      "text_length": 1259,
+      "has_native_text": false,
+      "classification": "FORM_8014",
+      "confidence": 0.99,
+      "detected_form_number": "8014",
+      "keywords": [
+        "FORM"
+      ],
+      "orientation": 0
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G001",
+      "type": "DECISION",
+      "pages": [
+        1
+      ],
+      "first_page": 1,
+      "last_page": 1,
+      "confidence": 0.94,
+      "continuation": false
+    },
+    {
+      "group_id": "G002",
+      "type": "FORM_8014",
+      "pages": [
+        2
+      ],
+      "first_page": 2,
+      "last_page": 2,
+      "confidence": 0.99,
+      "continuation": false
+    }
+  ],
+  "extracted_records": [
+    {
+      "group_id": "G001",
+      "type": "DECISION",
+      "pages": [
+        1
+      ],
+      "first_page": 1,
+      "last_page": 1
+    },
+    {
+      "group_id": "G002",
+      "type": "FORM_8014",
+      "pages": [
+        2
+      ],
+      "first_page": 2,
+      "last_page": 2
+    }
+  ],
+  "employees": [
+    {
+      "no": null,
+      "full_name": "Hồ Xuân Dũng",
+      "staff_id": "VAE01749",
+      "department": "1",
+      "attendance_hours": 0.0,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "VAE04011 NTHCM 70.00",
+      "course_result": "N/A",
+      "certificate_no": "0",
+      "remark": "No Completed N/A",
+      "source_page": 2,
+      "confidence": 0.92,
+      "raw_text": "VAE01749 NTHCM 70.00"
+    },
+    {
+      "no": null,
+      "full_name": "Phạm Quang Duy",
+      "staff_id": "VAE04011",
+      "department": "1",
+      "attendance_hours": 0.0,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "VAE04012 NTHCM 70.00",
+      "course_result": "N/A",
+      "certificate_no": "0",
+      "remark": "No Completed N/A",
+      "source_page": 2,
+      "confidence": 0.92,
+      "raw_text": "VAE04011 NTHCM 70.00"
+    },
+    {
+      "no": null,
+      "full_name": "Nguyễn Ngọc Tân",
+      "staff_id": "VAE04012",
+      "department": "1",
+      "attendance_hours": 0.0,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "VAE04013 NTHCM 70.00",
+      "course_result": "N/A",
+      "certificate_no": "0",
+      "remark": "No Completed N/A",
+      "source_page": 2,
+      "confidence": 0.92,
+      "raw_text": "VAE04012 NTHCM 70.00"
+    },
+    {
+      "no": null,
+      "full_name": "Đỗ Minh Khôi",
+      "staff_id": "VAE04013",
+      "department": "1",
+      "attendance_hours": 0.0,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "VAE04014 NTHCM 70.00",
+      "course_result": "N/A",
+      "certificate_no": "0",
+      "remark": "No Completed N/A Note:",
+      "source_page": 2,
+      "confidence": 0.92,
+      "raw_text": "VAE04013 NTHCM 70.00"
+    },
+    {
+      "no": null,
+      "full_name": "Lê Văn Sơn",
+      "staff_id": "VAE04014",
+      "department": "1",
+      "attendance_hours": 0.0,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "Checked by The trainee will be qualified as completed the course and/or received the Certificate of Recognition/Certificate of Course Completion/Attestation of Course Attendance (if any) if Attended minimum of 90% course duration, and Passed all exams (if any),and Does not be expelled from the course. Nguyen Duy Khanh Nguyen Ngoc Quang",
+      "course_result": "N/A",
+      "certificate_no": "PAGE1/1",
+      "remark": "",
+      "source_page": 2,
+      "confidence": 0.92,
+      "raw_text": "VAE04014 NTHCM 70.00"
+    }
+  ],
+  "header": {
+    "form_number": "8014",
+    "title": "B787 Aircraft Structure Repair",
+    "dispatch_no": "2186/TTDT-DTPN,Dated 21/08/2026",
+    "code": "ASRT-B787-",
+    "location": "Phong Dao tao phia Training SR/2602/S 17/08/2026 Nam-Trung tam Dao tao",
+    "dates_found": [
+      "21/08/2026",
+      "03/08/2026",
+      "17/08/2026"
+    ],
+    "duration_from": "03/08/2026",
+    "duration_to": "17/08/2026",
+    "total_participants": 5,
+    "training_hours": 70.0
+  },
+  "footer": {},
+  "issues": [
+    {
+      "page": null,
+      "field": null,
+      "severity": "info",
+      "message": "PDF type detected: SCAN | Engine used: paddle_ocr"
+    },
+    {
+      "page": null,
+      "field": null,
+      "severity": "info",
+      "message": "staff_ref loaded: 2728 entries – names filled by Staff ID lookup"
+    }
+  ],
+  "overall_confidence": 0.98
+}

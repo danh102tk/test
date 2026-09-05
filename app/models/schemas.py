@@ -1,6 +1,7 @@
 from typing import Any, Optional
 from pydantic import BaseModel, Field
 
+
 class PageAnalysis(BaseModel):
     page: int
     text_length: int
@@ -9,32 +10,42 @@ class PageAnalysis(BaseModel):
     confidence: float
     detected_form_number: Optional[str] = None
     keywords: list[str] = Field(default_factory=list)
+    orientation: int = 0  # 0 / 90 / 180 / 270
+
 
 class DocumentGroup(BaseModel):
     group_id: str
     type: str
     pages: list[int]
+    first_page: int = 0
+    last_page: int = 0
     confidence: float
     continuation: bool = False
+
 
 class ExtractionIssue(BaseModel):
     page: Optional[int] = None
     field: Optional[str] = None
-    severity: str = 'warning'
+    severity: str = "warning"  # error | warning | info
     message: str
 
+
 class Employee(BaseModel):
-    full_name: str = ''
-    staff_id: str = ''
-    department: str = ''
-    attendance: Optional[float] = None
-    exam_pass: Optional[bool] = None
-    discipline_status: str = ''
-    course_result: str = ''
-    certificate_no: str = ''
+    no: Optional[str] = None          # STT from OCR
+    full_name: str = ""
+    staff_id: str = ""                # ??? when missing
+    department: str = ""
+    attendance_hours: Optional[float] = None   # hours, int/float
+    exam_pass: Optional[int] = None            # 1 / 0 / None
+    exam_fail: Optional[int] = None            # 1 / 0 / None
+    discipline_status: str = ""
+    course_result: str = ""                    # Completed / Incompleted / N/A
+    certificate_no: str = ""
+    remark: str = ""
     source_page: Optional[int] = None
     confidence: float = 0.0
-    raw_text: str = ''
+    raw_text: str = ""
+
 
 class ProcessingResult(BaseModel):
     document_id: str
@@ -47,5 +58,6 @@ class ProcessingResult(BaseModel):
     extracted_records: list[dict[str, Any]] = Field(default_factory=list)
     employees: list[Employee] = Field(default_factory=list)
     header: dict[str, Any] = Field(default_factory=dict)
+    footer: dict[str, Any] = Field(default_factory=dict)
     issues: list[ExtractionIssue] = Field(default_factory=list)
     overall_confidence: float = 0.0

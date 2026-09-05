@@ -1,0 +1,189 @@
+{
+  "document_id": "0644d84f-62d8-4dc2-b70d-9809479ea531",
+  "filename": "FORM 8014 TRAINING COURSE REPORT.pdf",
+  "processed_at": "2026-09-05T06:36:16.574896+00:00",
+  "page_count": 1,
+  "processing_engine": "local_pymupdf",
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 1576,
+      "has_native_text": true,
+      "classification": "FORM_8014",
+      "confidence": 0.99,
+      "detected_form_number": "8014",
+      "keywords": [
+        "FORM"
+      ],
+      "orientation": 0
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G001",
+      "type": "FORM_8014",
+      "pages": [
+        1
+      ],
+      "first_page": 1,
+      "last_page": 1,
+      "confidence": 0.99,
+      "continuation": false
+    }
+  ],
+  "extracted_records": [
+    {
+      "group_id": "G001",
+      "type": "FORM_8014",
+      "pages": [
+        1
+      ],
+      "first_page": 1,
+      "last_page": 1
+    }
+  ],
+  "employees": [
+    {
+      "no": null,
+      "full_name": "Đồng Thị Phương",
+      "staff_id": "VAE03156",
+      "department": "1",
+      "attendance_hours": 0.0,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "2 Phạm Hữu Quang",
+      "course_result": "N/A",
+      "certificate_no": "1",
+      "remark": "0",
+      "source_page": 1,
+      "confidence": 0.92,
+      "raw_text": "VAE03156 NgHCM 3.22"
+    },
+    {
+      "no": null,
+      "full_name": "Phạm Hữu Quang",
+      "staff_id": "VAE00034",
+      "department": "1",
+      "attendance_hours": 0.0,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "3 Nguyễn Duy Quang",
+      "course_result": "N/A",
+      "certificate_no": "1",
+      "remark": "0",
+      "source_page": 1,
+      "confidence": 0.92,
+      "raw_text": "VAE00034 NTHCM 4.32"
+    },
+    {
+      "no": null,
+      "full_name": "Nguyễn Duy Quang",
+      "staff_id": "VAE00387",
+      "department": "1",
+      "attendance_hours": 0.0,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "4 Hồ Thị Quang",
+      "course_result": "N/A",
+      "certificate_no": "0",
+      "remark": "1",
+      "source_page": 1,
+      "confidence": 0.92,
+      "raw_text": "VAE00387 PVBD 3.01"
+    },
+    {
+      "no": null,
+      "full_name": "Hồ Thị Quang",
+      "staff_id": "VAE03373",
+      "department": "0",
+      "attendance_hours": 1.0,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "5 Trần Lệ Quyên",
+      "course_result": "N/A",
+      "certificate_no": "1",
+      "remark": "0",
+      "source_page": 1,
+      "confidence": 0.92,
+      "raw_text": "VAE03373 NTHAN 4.55"
+    },
+    {
+      "no": null,
+      "full_name": "Trần Lệ Quyên",
+      "staff_id": "VAE03174",
+      "department": "1",
+      "attendance_hours": 0.0,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "6 Bùi Thị Thắm",
+      "course_result": "N/A",
+      "certificate_no": "0",
+      "remark": "1",
+      "source_page": 1,
+      "confidence": 0.92,
+      "raw_text": "VAE03174 NgHAN 5.22"
+    },
+    {
+      "no": null,
+      "full_name": "Bùi Thị Thắm",
+      "staff_id": "VAE00037",
+      "department": "0",
+      "attendance_hours": 1.0,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "7 Nguyễn Thanh Thủy",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "Note: The trainee will be qualified as course completion if: - Attends at least 90% training hours and 90% of training duration of each lesson/block examination if applicable, and, - Passes all exam and, - Not be expelled from the course.",
+      "source_page": 1,
+      "confidence": 0.92,
+      "raw_text": "VAE00037 CNDAD 3.75"
+    },
+    {
+      "no": null,
+      "full_name": "Nguyễn Thanh Thủy",
+      "staff_id": "VAE00043",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "Trần Văn A",
+      "source_page": 1,
+      "confidence": 0.92,
+      "raw_text": "VAE00043 CNNT N/A N/A N/A N/A N/A N/A"
+    }
+  ],
+  "header": {
+    "form_number": "8014",
+    "title": "B787 Aircraft Structure Repair Training",
+    "dispatch_no": "1231/TTĐT-ĐTPN, Dated 01/09/2026)",
+    "code": "ASRT-B787- SR/2602/S`",
+    "duration_from": "03/08/2026",
+    "duration_to": "17/08/2026",
+    "location": "Phòng đào tạo phía Nam – Trung tâm Đào tạo",
+    "total_participants": 2,
+    "training_hours": 3.0
+  },
+  "footer": {
+    "prepared_by": "Trần Văn A",
+    "checked_by": "Nguyễn Thành B"
+  },
+  "issues": [
+    {
+      "page": null,
+      "field": null,
+      "severity": "info",
+      "message": "PDF type detected: NATIVE | Engine used: local_pymupdf"
+    },
+    {
+      "page": null,
+      "field": null,
+      "severity": "info",
+      "message": "staff_ref loaded: 2728 entries – names filled by Staff ID lookup"
+    }
+  ],
+  "overall_confidence": 0.98
+}

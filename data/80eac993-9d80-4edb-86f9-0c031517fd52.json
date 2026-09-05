@@ -1,0 +1,446 @@
+{
+  "document_id": "80eac993-9d80-4edb-86f9-0c031517fd52",
+  "filename": "FORM 8014 TRAINING COURSE REPORT.pdf",
+  "processed_at": "2026-09-05T05:34:39.741082+00:00",
+  "page_count": 1,
+  "processing_engine": "local_pymupdf",
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 1576,
+      "has_native_text": true,
+      "classification": "FORM_8014",
+      "confidence": 0.99,
+      "detected_form_number": "8014",
+      "keywords": [
+        "FORM"
+      ],
+      "orientation": 0
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G001",
+      "type": "FORM_8014",
+      "pages": [
+        1
+      ],
+      "first_page": 1,
+      "last_page": 1,
+      "confidence": 0.99,
+      "continuation": false
+    }
+  ],
+  "extracted_records": [
+    {
+      "group_id": "G001",
+      "type": "FORM_8014",
+      "pages": [
+        1
+      ],
+      "first_page": 1,
+      "last_page": 1
+    }
+  ],
+  "employees": [
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "???",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.45,
+      "raw_text": "FORM 8014"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "???",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.45,
+      "raw_text": "ISS. 01, REV. 07 - DATE: 18 May 2022"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "???",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.45,
+      "raw_text": "(Attached with the Dispatch No 1231/TTĐT-ĐTPN, Dated 01/09/2026)"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "???",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.45,
+      "raw_text": "Title: B787 Aircraft Structure Repair Training"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "???",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.45,
+      "raw_text": "Code: ASRT-B787-"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "???",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.45,
+      "raw_text": "SR/2602/S`"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "???",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.45,
+      "raw_text": "Duration: From 03/08/2026 to 17/08/2026"
+    },
+    {
+      "no": null,
+      "full_name": "Total participants: 2 traines",
+      "staff_id": "???",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.45,
+      "raw_text": "Total participants: 2 traines"
+    },
+    {
+      "no": null,
+      "full_name": "Training hours: 3 hours",
+      "staff_id": "???",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.45,
+      "raw_text": "Training hours: 3 hours"
+    },
+    {
+      "no": null,
+      "full_name": "Total training chapters: 1",
+      "staff_id": "???",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.45,
+      "raw_text": "Total training chapters: 1"
+    },
+    {
+      "no": null,
+      "full_name": "Total exam chapters: 1",
+      "staff_id": "???",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.45,
+      "raw_text": "Total exam chapters: 1"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "VAE03156",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.85,
+      "raw_text": "VAE03156"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "VAE00034",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.85,
+      "raw_text": "VAE00034"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "VAE00387",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.85,
+      "raw_text": "VAE00387"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "VAE03373",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.85,
+      "raw_text": "VAE03373"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "VAE03174",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.85,
+      "raw_text": "VAE03174"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "VAE00037",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.85,
+      "raw_text": "VAE00037"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "VAE00043",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.85,
+      "raw_text": "VAE00043"
+    },
+    {
+      "no": null,
+      "full_name": "",
+      "staff_id": "???",
+      "department": "",
+      "attendance_hours": null,
+      "exam_pass": null,
+      "exam_fail": null,
+      "discipline_status": "",
+      "course_result": "N/A",
+      "certificate_no": "",
+      "remark": "",
+      "source_page": 1,
+      "confidence": 0.45,
+      "raw_text": "Attends at least 90% training hours and 90% of"
+    }
+  ],
+  "header": {
+    "form_number": "8014",
+    "title": "TRAINING COURSE REPORT",
+    "dispatch_no": "1231/TTĐT-ĐTPN, Dated 01/09/2026)",
+    "code": "ASRT-B787-",
+    "location": "Phòng đào tạo phía",
+    "dates_found": [
+      "01/09/2026",
+      "03/08/2026",
+      "17/08/2026"
+    ],
+    "duration_from": "01/09/2026",
+    "duration_to": "03/08/2026",
+    "total_participants": 2,
+    "training_hours": 3.0
+  },
+  "footer": {
+    "prepared_by": "Trần Văn A",
+    "checked_by": "Nguyễn Thành B"
+  },
+  "issues": [
+    {
+      "page": 1,
+      "field": "staff_id",
+      "severity": "warning",
+      "message": "Missing Staff ID → filled ??? (row kept, STT preserved if present)"
+    },
+    {
+      "page": 1,
+      "field": "staff_id",
+      "severity": "warning",
+      "message": "Missing Staff ID → filled ??? (row kept, STT preserved if present)"
+    },
+    {
+      "page": 1,
+      "field": "staff_id",
+      "severity": "warning",
+      "message": "Missing Staff ID → filled ??? (row kept, STT preserved if present)"
+    },
+    {
+      "page": 1,
+      "field": "staff_id",
+      "severity": "warning",
+      "message": "Missing Staff ID → filled ??? (row kept, STT preserved if present)"
+    },
+    {
+      "page": 1,
+      "field": "staff_id",
+      "severity": "warning",
+      "message": "Missing Staff ID → filled ??? (row kept, STT preserved if present)"
+    },
+    {
+      "page": 1,
+      "field": "staff_id",
+      "severity": "warning",
+      "message": "Missing Staff ID → filled ??? (row kept, STT preserved if present)"
+    },
+    {
+      "page": 1,
+      "field": "staff_id",
+      "severity": "warning",
+      "message": "Missing Staff ID → filled ??? (row kept, STT preserved if present)"
+    },
+    {
+      "page": 1,
+      "field": "staff_id",
+      "severity": "warning",
+      "message": "Missing Staff ID → filled ??? (row kept, STT preserved if present)"
+    },
+    {
+      "page": 1,
+      "field": "staff_id",
+      "severity": "warning",
+      "message": "Missing Staff ID → filled ??? (row kept, STT preserved if present)"
+    },
+    {
+      "page": 1,
+      "field": "staff_id",
+      "severity": "warning",
+      "message": "Missing Staff ID → filled ??? (row kept, STT preserved if present)"
+    },
+    {
+      "page": 1,
+      "field": "staff_id",
+      "severity": "warning",
+      "message": "Missing Staff ID → filled ??? (row kept, STT preserved if present)"
+    },
+    {
+      "page": 1,
+      "field": "staff_id",
+      "severity": "warning",
+      "message": "Missing Staff ID → filled ??? (row kept, STT preserved if present)"
+    }
+  ],
+  "overall_confidence": 0.98
+}

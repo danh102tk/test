@@ -1,0 +1,67 @@
+{
+  "document_id": "98f86365-7460-4e68-9ded-60e21e1e2780",
+  "filename": "bckq.pdf",
+  "processed_at": "2026-09-05T05:14:25.295286+00:00",
+  "page_count": 2,
+  "processing_engine": "local_pymupdf",
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 0,
+      "has_native_text": false,
+      "classification": "UNKNOWN",
+      "confidence": 0.1,
+      "detected_form_number": null,
+      "keywords": [],
+      "orientation": 0
+    },
+    {
+      "page": 2,
+      "text_length": 0,
+      "has_native_text": false,
+      "classification": "UNKNOWN",
+      "confidence": 0.1,
+      "detected_form_number": null,
+      "keywords": [],
+      "orientation": 0
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G001",
+      "type": "UNKNOWN",
+      "pages": [
+        1,
+        2
+      ],
+      "first_page": 1,
+      "last_page": 2,
+      "confidence": 0.1,
+      "continuation": true
+    }
+  ],
+  "extracted_records": [
+    {
+      "group_id": "G001",
+      "type": "UNKNOWN",
+      "pages": [
+        1,
+        2
+      ],
+      "first_page": 1,
+      "last_page": 2
+    }
+  ],
+  "employees": [],
+  "header": {},
+  "footer": {},
+  "issues": [
+    {
+      "page": null,
+      "field": null,
+      "severity": "warning",
+      "message": "No employee rows could be extracted from FORM 8014 pages."
+    }
+  ],
+  "overall_confidence": 0.1
+}
