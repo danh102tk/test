@@ -1,0 +1,79 @@
+{
+  "document_id": "07849248-cc5e-49ad-82f3-5cfd1cca37c3",
+  "filename": "FORM 8014 TRAINING COURSE REPORT image.pdf",
+  "processed_at": "2026-09-07T07:29:16.773198+00:00",
+  "page_count": 2,
+  "processing_engine": "local_pymupdf",
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 94,
+      "has_native_text": true,
+      "classification": "FORM_8014",
+      "confidence": 0.99,
+      "detected_form_number": "8014",
+      "keywords": [
+        "FORM"
+      ],
+      "orientation": 0
+    },
+    {
+      "page": 2,
+      "text_length": 94,
+      "has_native_text": true,
+      "classification": "FORM_8014",
+      "confidence": 0.99,
+      "detected_form_number": "8014",
+      "keywords": [
+        "FORM"
+      ],
+      "orientation": 0
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G001",
+      "type": "FORM_8014",
+      "pages": [
+        1,
+        2
+      ],
+      "first_page": 1,
+      "last_page": 2,
+      "confidence": 0.99,
+      "continuation": true
+    }
+  ],
+  "extracted_records": [
+    {
+      "group_id": "G001",
+      "type": "FORM_8014",
+      "pages": [
+        1,
+        2
+      ],
+      "first_page": 1,
+      "last_page": 2
+    }
+  ],
+  "employees": [],
+  "header": {
+    "form_number": "8014"
+  },
+  "footer": {},
+  "issues": [
+    {
+      "page": null,
+      "field": null,
+      "severity": "info",
+      "message": "PDF type detected: NATIVE | Engine used: local_pymupdf"
+    },
+    {
+      "page": null,
+      "field": null,
+      "severity": "warning",
+      "message": "No employee rows could be extracted from FORM 8014 pages."
+    }
+  ],
+  "overall_confidence": 0.99
+}
