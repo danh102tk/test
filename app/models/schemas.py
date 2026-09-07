@@ -35,9 +35,9 @@ class Employee(BaseModel):
     full_name: str = ""
     staff_id: str = ""                # ??? when missing
     department: str = ""
-    attendance_hours: Optional[float] = None   # hours, int/float
-    exam_pass: Optional[int] = None            # 1 / 0 / None
-    exam_fail: Optional[int] = None            # 1 / 0 / None
+    attendance_hours: Optional[float | str] = None  # hours or 'N/A'
+    exam_pass: Optional[int | str] = None       # 1 / 0 / 'N/A'
+    exam_fail: Optional[int | str] = None       # 1 / 0 / 'N/A'
     discipline_status: str = ""
     course_result: str = ""                    # Completed / Incompleted / N/A
     certificate_no: str = ""

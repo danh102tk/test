@@ -1,6 +1,6 @@
 """
-Tra cứu Full Name từ file Excel staff_ref (cột Full Name + Staff ID).
-Dùng khi OCR tên tiếng Việt không chuẩn (Paddle).
+Lookup Full Name from staff_ref Excel (Full Name + Staff ID columns).
+Used when OCR Vietnamese names are unreliable (Paddle).
 """
 from __future__ import annotations
 
@@ -20,8 +20,8 @@ def _normalize_staff_id(value: str) -> str:
 
 def load_staff_ref(path: Path | None = None) -> dict[str, str]:
     """
-    Đọc Excel staff_ref → dict[staff_id] = full_name.
-    Tìm cột linh hoạt: Staff ID / StaffID / Mã NV, Full Name / FullName / Họ tên.
+    Load staff_ref Excel -> dict[staff_id] = full_name.
+    Flexible headers: Staff ID / StaffID, Full Name / FullName / Ho ten.
     """
     global _CACHE, _CACHE_PATH
 
@@ -51,7 +51,7 @@ def load_staff_ref(path: Path | None = None) -> dict[str, str]:
     if not rows:
         return {}
 
-    # Tìm header
+    # Find header row
     header = [str(c or "").strip().lower() for c in rows[0]]
     id_col = name_col = None
     for i, h in enumerate(header):
@@ -59,7 +59,7 @@ def load_staff_ref(path: Path | None = None) -> dict[str, str]:
             id_col = i
         if h in {"full name", "fullname", "họ tên", "ho ten", "họ và tên", "hoten"}:
             name_col = i
-    # fallback: 2 cột đầu Name | ID hoặc ID | Name
+    # fallback: first two columns Name | ID or ID | Name
     if id_col is None or name_col is None:
         if len(header) >= 2:
             name_col = name_col if name_col is not None else 0

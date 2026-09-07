@@ -15,7 +15,6 @@ def validate(employees: list[Employee], header: dict) -> list[ExtractionIssue]:
     for e in employees:
         # Staff ID
         if e.staff_id == "???":
-            # already warned at extraction time
             pass
         elif not STAFF_RE.match(e.staff_id):
             issues.append(
@@ -38,18 +37,19 @@ def validate(employees: list[Employee], header: dict) -> list[ExtractionIssue]:
         if e.staff_id != "???":
             seen.add(e.staff_id)
 
-        # Attendance – hours, no hard 0-100 limit; only flag obviously wrong negative
-        if e.attendance_hours is not None and e.attendance_hours < 0:
+        # Attendance – only compare when numeric (skip "N/A")
+        att = e.attendance_hours
+        if isinstance(att, (int, float)) and att < 0:
             issues.append(
                 ExtractionIssue(
                     page=e.source_page,
                     field="attendance_hours",
                     severity="error",
-                    message=f"Negative attendance hours: {e.attendance_hours}",
+                    message=f"Negative attendance hours: {att}",
                 )
             )
 
-        # Exam status consistency
+        # Exam status consistency (only when both are numeric 1)
         if e.exam_pass == 1 and e.exam_fail == 1:
             issues.append(
                 ExtractionIssue(

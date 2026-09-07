@@ -23,7 +23,7 @@ class Settings:
     paddle_lang = os.getenv("PADDLE_LANG", "en")
     paddle_use_gpu = os.getenv("PADDLE_USE_GPU", "false").lower() in {"1", "true", "yes"}
 
-    # Excel tra cứu tên theo Staff ID (Full Name | Staff ID)
+    # Excel name lookup by Staff ID (Full Name | Staff ID)
     _ref = os.getenv("STAFF_REF_PATH", str(BASE_DIR / "data" / "staff_ref.xlsx"))
     staff_ref_path = Path(_ref) if _ref else BASE_DIR / "data" / "staff_ref.xlsx"
 

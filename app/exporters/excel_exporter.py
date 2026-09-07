@@ -77,19 +77,30 @@ class ExcelExporter:
         ]
         emp.append(headers)
         style_header(emp)
+        def _na(v):
+            """None/empty -> N/A; giữ nguyên 'N/A' hoặc số."""
+            if v is None or v == "":
+                return "N/A"
+            if isinstance(v, str) and v.upper() in {"N/A", "NA"}:
+                return "N/A"
+            return _cell_value(v)
+
         for row in data.get("employees") or []:
+            disc = row.get("discipline_status") or ""
+            if not disc:
+                disc = "N/A"
             emp.append(
                 [
                     _cell_value(row.get("no")),
                     _cell_value(row.get("full_name", "")),
                     _cell_value(row.get("staff_id", "")),
                     _cell_value(row.get("department", "")),
-                    _cell_value(row.get("attendance_hours")),
-                    _cell_value(row.get("exam_pass")),
-                    _cell_value(row.get("exam_fail")),
-                    _cell_value(row.get("discipline_status", "")),
-                    _cell_value(row.get("course_result", "")),
-                    _cell_value(row.get("certificate_no", "")),
+                    _na(row.get("attendance_hours")),
+                    _na(row.get("exam_pass")),
+                    _na(row.get("exam_fail")),
+                    _cell_value(disc),
+                    _cell_value(row.get("course_result", "") or "N/A"),
+                    _cell_value(row.get("certificate_no", "") or "N/A"),
                     _cell_value(row.get("remark", "")),
                     _cell_value(row.get("source_page")),
                     _cell_value(row.get("confidence")),
