@@ -1,0 +1,169 @@
+================================================================================
+  HOW TO ADD A NEW FORM (A to Z)
+  PDF Form Extractor – step-by-step guide
+================================================================================
+
+Prerequisites
+-------------
+- Project runs correctly for FORM 8014 (native + scan).
+- You understand the target form: headers, table columns, footer/signatures.
+- Optional: sample native PDF and/or scanned PDF of the new form.
+
+
+STEP 1 – Create the form package
+--------------------------------
+1. Copy the template folder:
+
+     app/forms/templates/   -->   app/forms/form_XXXX/
+
+   Example: form_9001 for "FORM 9001".
+
+2. Inside form_XXXX/ you should have at least:
+
+     handler.py          (required)
+     native_extractor.py (recommended – parsing logic)
+     ocr_extractor.py    (optional – OCR-specific overrides)
+     rules.yaml          (optional – enum / normalize rules)
+
+
+STEP 2 – Implement the handler
+------------------------------
+Edit app/forms/form_XXXX/handler.py
+
+  class FormXXXXHandler:
+      form_id = "FORM_XXXX"          # must match registry key
+
+      def detect(self, text: str) -> float:
+          # Return confidence 0.0 .. 1.0 that this text is YOUR form.
+          # Use unique keywords: form number, title, document type.
+
+      def classify_page(self, text: str) -> tuple[str, float, list, str|None]:
+          # Returns: (classification, confidence, keywords, form_number)
+          # classification examples: "FORM_XXXX", "DECISION", "UNKNOWN"
+
+      def extract_header(self, text, *, from_ocr=False) -> dict:
+          # Title, code, dates, location, dispatch, etc.
+
+      def extract_footer(self, text, *, from_ocr=False) -> dict:
+          # prepared_by, checked_by, approved_by, ...
+
+      def extract_employees(self, text_by_page, *, from_ocr=False):
+          # Returns (list[Employee], list[ExtractionIssue])
+          # When from_ocr=True you may use staff_ref for names.
+
+
+STEP 3 – Parsing tips (native_extractor)
+----------------------------------------
+- Native PDF: fields often appear one-per-line (vertical layout).
+  Pattern: find Staff ID line, then read name (line above), dept/attendance
+  (lines below) by fixed offsets – same idea as FORM 8014.
+
+- Scan/OCR: text is noisier; prefer:
+  - staff_ref.xlsx lookup by Staff ID for Full Name
+  - enum rules in rules.yaml for fixed columns (Completed/Incompleted, 0/1, …)
+
+- Do NOT apply aggressive line-joining on employee tables for native layout
+  (it merges vertical cells). Use wrap-merge only for header value lines.
+
+
+STEP 4 – Field rules (optional)
+-------------------------------
+Create app/forms/form_XXXX/rules.yaml (copy from form_8014/rules.yaml).
+
+Typical column types:
+  - enum / enum_fuzzy   : fixed value sets (case-insensitive)
+  - number_or_na        : float/int or N/A
+  - lookup              : staff_ref by Staff ID
+  - free_text           : remark, certificate (optional)
+
+Update app/services/field_rules.py _rules_path() if you need per-form
+rule file selection (currently prefers form_8014/rules.yaml, then data/).
+
+
+STEP 5 – Register the form
+--------------------------
+Edit app/forms/registry.py:
+
+  from app.forms.form_XXXX.handler import FormXXXXHandler
+
+  HANDLERS: dict[str, FormHandler] = {
+      "FORM_8014": Form8014Handler(),
+      "FORM_XXXX": FormXXXXHandler(),   # <-- add this
+  }
+
+
+STEP 6 – Staff reference (optional, for OCR names)
+--------------------------------------------------
+Place Excel at:  data/staff_ref.xlsx
+Columns (flexible names): Full Name | Staff ID
+
+Or set env:  STAFF_REF_PATH=C:\path\to\staff.xlsx
+
+Used only when from_ocr=True (scan path).
+
+
+STEP 7 – Test stage by stage
+----------------------------
+From project root (venv active):
+
+  python -m tests.stages.run_stage --pdf "path\to\sample.pdf" --stage detect
+  python -m tests.stages.run_stage --pdf "path\to\sample.pdf" --stage extract_text
+  python -m tests.stages.run_stage --pdf "path\to\sample.pdf" --stage classify
+  python -m tests.stages.run_stage --pdf "path\to\sample.pdf" --stage header
+  python -m tests.stages.run_stage --pdf "path\to\sample.pdf" --stage employees
+  python -m tests.stages.run_stage --pdf "path\to\sample.pdf" --stage all
+
+Dump raw text layout:
+
+  python -m tests.stages.dump_text "path\to\sample.pdf"
+
+
+STEP 8 – Full UI / API
+----------------------
+  python app_ui.py
+  # or API via main.py / uvicorn
+
+Upload sample PDF; check 5 Excel sheets:
+  Report Info | Employee List | Error Review | Page Analysis | Document Groups
+
+
+STEP 9 – Checklist before production
+------------------------------------
+  [ ] detect() returns high score on real samples, low on other forms
+  [ ] classify marks form pages correctly (not UNKNOWN)
+  [ ] header: title, dates, location (wrap-text if multi-line)
+  [ ] employees: correct count, Staff IDs, key columns
+  [ ] course_result / enums match rules.yaml
+  [ ] native PDF still works if you only changed OCR path
+  [ ] scan PDF: staff_ref names applied when IDs match
+  [ ] empty Remark stays empty; N/A preserved for Pass/Fail/Attendance
+
+
+Architecture reminder
+---------------------
+  PDF
+   -> engines (native_pymupdf | ocr_paddle)
+   -> forms.registry.detect_form
+   -> handler.classify / header / footer / employees
+   -> field_rules.normalize + validation
+   -> Excel export
+
+Shared (do not duplicate):
+  engines, staff_ref, grouping, validation, excel_exporter, stage tests
+
+Per form:
+  handler + extractors + rules.yaml
+
+
+Common pitfalls
+---------------
+1. Registering handler but forgetting form_id match in HANDLERS key.
+2. Joining all lines for employees on native PDFs (breaks vertical tables).
+3. Treating "No" as a table header keyword (clears Discipline = No).
+4. Fuzzy department match too loose (short codes matching inside longer ones).
+5. Comparing attendance "N/A" (str) with < 0 (use isinstance number check).
+
+
+================================================================================
+End of guide
+================================================================================

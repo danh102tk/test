@@ -1,56 +1,46 @@
-# Test từng bước workflow FORM 8014
+# Stage-by-stage workflow tests (FORM 8014)
 
-Chạy độc lập từng stage để dễ debug. Khi tất cả stage ổn → mới tin full pipeline.
+Run each stage independently for debugging. When all stages look good, trust the full pipeline.
 
-## Cách chạy
+## Usage
 
-Từ thư mục gốc project (`pdf_excel_extractor_completed`):
-
-```bash
-# Không cần PDF – dùng mock data
-python -m tests.stages.run_stage --stage all
-python -m tests.stages.run_stage --stage detect
-python -m tests.stages.run_stage --stage employees
-
-# Có file PDF thật
-python -m tests.stages.run_stage --pdf path/to/your.pdf --stage detect
-python -m tests.stages.run_stage --pdf path/to/your.pdf --stage extract_text
-python -m tests.stages.run_stage --pdf path/to/your.pdf --stage classify
-python -m tests.stages.run_stage --pdf path/to/your.pdf --stage group
-python -m tests.stages.run_stage --pdf path/to/your.pdf --stage header
-python -m tests.stages.run_stage --pdf path/to/your.pdf --stage footer
-python -m tests.stages.run_stage --pdf path/to/your.pdf --stage employees
-python -m tests.stages.run_stage --pdf path/to/your.pdf --stage validate
-python -m tests.stages.run_stage --pdf path/to/your.pdf --stage export
-
-# Chạy hết trên file thật
-python -m tests.stages.run_stage --pdf path/to/your.pdf --stage all
-```
-
-## Các stage
-
-| Stage          | Việc làm                                      |
-|----------------|-----------------------------------------------|
-| `detect`       | Phân loại native / scan / mixed               |
-| `extract_text` | Chọn engine + lấy text (PyMuPDF / Paddle / DocAI) |
-| `classify`     | Phân loại từng trang (FORM_8014 / …)          |
-| `group`        | Gộp trang liên tục + first/last page          |
-| `header`       | Lấy header từ trang đầu chuỗi FORM_8014       |
-| `footer`       | Lấy footer từ trang cuối chuỗi                |
-| `employees`    | Extract bảng học viên + quy tắc ???           |
-| `validate`     | Validate + check course_result                |
-| `export`       | Xuất Excel 5 sheet                            |
-| `all`          | Chạy tuần tự tất cả                           |
-
-## Gợi ý debug
-
-1. Chạy `--stage detect` trước → xem PDF type đúng chưa.
-2. Nếu `scan` → cài Paddle rồi chạy `--stage extract_text`.
-3. Xem text có đọc được không → mới sang `classify` / `employees`.
-4. Khi `employees` ra đúng số dòng + Staff ID → mới tin full pipeline.
-
-## Unit test nhanh (mock, không cần PDF)
+From project root:
 
 ```bash
+# Mock data (no PDF)
 python -m tests.stages.run_stage --stage all
+
+# Real PDF
+python -m tests.stages.run_stage --pdf path/to/file.pdf --stage detect
+python -m tests.stages.run_stage --pdf path/to/file.pdf --stage extract_text
+python -m tests.stages.run_stage --pdf path/to/file.pdf --stage classify
+python -m tests.stages.run_stage --pdf path/to/file.pdf --stage group
+python -m tests.stages.run_stage --pdf path/to/file.pdf --stage header
+python -m tests.stages.run_stage --pdf path/to/file.pdf --stage footer
+python -m tests.stages.run_stage --pdf path/to/file.pdf --stage employees
+python -m tests.stages.run_stage --pdf path/to/file.pdf --stage validate
+python -m tests.stages.run_stage --pdf path/to/file.pdf --stage export
+python -m tests.stages.run_stage --pdf path/to/file.pdf --stage all
 ```
+
+## Stages
+
+| Stage | Purpose |
+|-------|---------|
+| detect | native / scan / mixed |
+| extract_text | Engine + text (PyMuPDF / Paddle / DocAI) |
+| classify | Page type (FORM_8014 / …) |
+| group | Continuous groups + first/last page |
+| header | Header from first FORM_8014 page |
+| footer | Footer from last page |
+| employees | Employee table (+ ??? rules) |
+| validate | Validate + course_result check |
+| export | 5-sheet Excel |
+| all | Run everything in order |
+
+## Debug tips
+
+1. Run `--stage detect` first – confirm PDF type.
+2. If `scan` – install Paddle, then `--stage extract_text`.
+3. Confirm text is readable before `classify` / `employees`.
+4. When `employees` has correct rows + Staff IDs – run full pipeline / UI.

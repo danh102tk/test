@@ -26,3 +26,4 @@ gradio>=4.0
 # OPTIONAL – Google Document AI
 # ============================================================
 # google-cloud-documentai>=2.30
+PyYAML>=6.0
