@@ -1,0 +1,114 @@
+================================================================================
+  CMD TEST COMMANDS – PDF Form Extractor (Windows)
+  Copy từng khối lệnh vào Command Prompt / terminal đã activate .venv
+================================================================================
+
+------------------------------------------------------------------------------
+0) Vào thư mục project + bật venv
+------------------------------------------------------------------------------
+cd /d "C:\Users\trant\OneDrive\Máy tính\scan_pdf_to_sheet\grok\pdf_excel_extractor_completed_v2\pdf_excel_extractor_completed"
+
+.venv\Scripts\activate
+
+set FLAGS_use_mkldnn=0
+set FLAGS_onednn=0
+
+
+------------------------------------------------------------------------------
+1) Kiểm tra môi trường
+------------------------------------------------------------------------------
+python -c "import pymupdf; print('PyMuPDF OK')"
+python -c "from paddleocr import PaddleOCR; print('PaddleOCR OK')"
+python -c "from app.forms.registry import list_forms; print(list_forms())"
+python -c "from app.services.staff_ref import load_staff_ref; m=load_staff_ref(); print('staff_ref entries:', len(m))"
+
+
+------------------------------------------------------------------------------
+2) Đường dẫn PDF mẫu (đổi cho đúng máy bạn)
+------------------------------------------------------------------------------
+set NATIVE_PDF=C:\Users\trant\OneDrive\Máy tính\scan_pdf_to_sheet\FORM 8014 TRAINING COURSE REPORT.pdf
+set SCAN_PDF=C:\Users\trant\OneDrive\Máy tính\scan_pdf_to_sheet\bckq.pdf
+
+
+------------------------------------------------------------------------------
+3) Dump text thô (xem layout / Staff ID neighbors)
+------------------------------------------------------------------------------
+python -m tests.stages.dump_text "%NATIVE_PDF%"
+python -m tests.stages.dump_text "%SCAN_PDF%"
+
+
+------------------------------------------------------------------------------
+4) Test NATIVE – từng stage
+------------------------------------------------------------------------------
+python -m tests.stages.run_stage --pdf "%NATIVE_PDF%" --stage detect
+python -m tests.stages.run_stage --pdf "%NATIVE_PDF%" --stage extract_text
+python -m tests.stages.run_stage --pdf "%NATIVE_PDF%" --stage classify
+python -m tests.stages.run_stage --pdf "%NATIVE_PDF%" --stage group
+python -m tests.stages.run_stage --pdf "%NATIVE_PDF%" --stage header
+python -m tests.stages.run_stage --pdf "%NATIVE_PDF%" --stage footer
+python -m tests.stages.run_stage --pdf "%NATIVE_PDF%" --stage employees
+python -m tests.stages.run_stage --pdf "%NATIVE_PDF%" --stage validate
+python -m tests.stages.run_stage --pdf "%NATIVE_PDF%" --stage export
+python -m tests.stages.run_stage --pdf "%NATIVE_PDF%" --stage all
+
+
+------------------------------------------------------------------------------
+5) Test SCAN – từng stage (OCR có thể mất 1–2 phút lần đầu)
+------------------------------------------------------------------------------
+python -m tests.stages.run_stage --pdf "%SCAN_PDF%" --stage detect
+python -m tests.stages.run_stage --pdf "%SCAN_PDF%" --stage extract_text
+python -m tests.stages.run_stage --pdf "%SCAN_PDF%" --stage classify
+python -m tests.stages.run_stage --pdf "%SCAN_PDF%" --stage group
+python -m tests.stages.run_stage --pdf "%SCAN_PDF%" --stage header
+python -m tests.stages.run_stage --pdf "%SCAN_PDF%" --stage footer
+python -m tests.stages.run_stage --pdf "%SCAN_PDF%" --stage employees
+python -m tests.stages.run_stage --pdf "%SCAN_PDF%" --stage validate
+python -m tests.stages.run_stage --pdf "%SCAN_PDF%" --stage export
+python -m tests.stages.run_stage --pdf "%SCAN_PDF%" --stage all
+
+
+------------------------------------------------------------------------------
+6) Xóa cache OCR rồi chạy lại extract_text (scan)
+------------------------------------------------------------------------------
+python -m tests.stages.run_stage --pdf "%SCAN_PDF%" --clear-cache --stage extract_text
+
+
+------------------------------------------------------------------------------
+7) Test file PDF bất kỳ (sửa đường dẫn)
+------------------------------------------------------------------------------
+set PDF=C:\path\to\your\file.pdf
+
+python -m tests.stages.dump_text "%PDF%"
+python -m tests.stages.run_stage --pdf "%PDF%" --stage detect
+python -m tests.stages.run_stage --pdf "%PDF%" --stage extract_text
+python -m tests.stages.run_stage --pdf "%PDF%" --stage employees
+python -m tests.stages.run_stage --pdf "%PDF%" --stage all
+
+
+------------------------------------------------------------------------------
+8) Chạy UI Gradio
+------------------------------------------------------------------------------
+python app_ui.py
+
+
+------------------------------------------------------------------------------
+9) Cài thêm dependency (khi cần)
+------------------------------------------------------------------------------
+pip install PyMuPDF openpyxl pydantic python-dotenv PyYAML gradio
+pip install paddlepaddle paddleocr
+pip install pytesseract pillow
+
+
+------------------------------------------------------------------------------
+10) Xem file Excel đã export
+------------------------------------------------------------------------------
+dir exports
+explorer exports
+
+
+================================================================================
+Notes
+- Lần đầu PaddleOCR tải model: có thể lâu / đứng vài phút – đợi hoặc Ctrl+C rồi chạy lại (có cache model).
+- staff_ref: data\staff_ref.xlsx  (hoặc set STAFF_REF_PATH=...)
+- Stages: detect | extract_text | classify | group | header | footer | employees | validate | export | all
+================================================================================

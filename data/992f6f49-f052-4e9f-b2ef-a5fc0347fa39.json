@@ -1,0 +1,77 @@
+{
+  "document_id": "992f6f49-f052-4e9f-b2ef-a5fc0347fa39",
+  "filename": "bckq_rotated.pdf",
+  "processed_at": "2026-09-09T14:21:26.705495+00:00",
+  "page_count": 2,
+  "processing_engine": "paddle_ocr",
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 1004,
+      "has_native_text": false,
+      "classification": "DECISION",
+      "confidence": 0.94,
+      "detected_form_number": null,
+      "keywords": [
+        "DECISION"
+      ],
+      "orientation": 0
+    },
+    {
+      "page": 2,
+      "text_length": 733,
+      "has_native_text": false,
+      "classification": "UNKNOWN",
+      "confidence": 0.1,
+      "detected_form_number": null,
+      "keywords": [],
+      "orientation": 0
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G001",
+      "type": "DECISION",
+      "pages": [
+        1
+      ],
+      "first_page": 1,
+      "last_page": 1,
+      "confidence": 0.94,
+      "continuation": false
+    },
+    {
+      "group_id": "G002",
+      "type": "UNKNOWN",
+      "pages": [
+        2
+      ],
+      "first_page": 2,
+      "last_page": 2,
+      "confidence": 0.1,
+      "continuation": false
+    }
+  ],
+  "extracted_records": [],
+  "employees": [],
+  "header": {
+    "form_number": "8014",
+    "dates_found": [
+      "29/07/2026",
+      "29/07/2026",
+      "17/08/2026"
+    ],
+    "duration_from": "29/07/2026",
+    "duration_to": "17/08/2026"
+  },
+  "footer": {},
+  "issues": [
+    {
+      "page": null,
+      "field": null,
+      "severity": "warning",
+      "message": "No employee rows could be extracted from FORM 8014 pages."
+    }
+  ],
+  "overall_confidence": 0.52
+}

@@ -1,0 +1,34 @@
+================================================================================
+  Run on macOS
+================================================================================
+
+1) Python 3.10+ recommended
+   brew install python@3.11   # optional
+
+2) Create venv and install deps
+   cd /path/to/pdf_excel_extractor_completed
+   python3 -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+
+3) Optional OCR (scanned PDFs)
+   # CPU (Apple Silicon often works with official paddle wheels – check Paddle docs)
+   pip install paddlepaddle paddleocr
+   # If Paddle is problematic on your Mac, Tesseract is a lighter fallback:
+   brew install tesseract tesseract-lang
+   pip install pytesseract pillow
+
+4) Start UI
+   chmod +x start_ui.sh start_ui.command
+   ./start_ui.sh
+   # or: python app_ui.py
+   # or double-click start_ui.command in Finder
+
+5) Environment
+   export FLAGS_use_mkldnn=0
+   export FLAGS_onednn=0
+   # Optional staff_ref path:
+   export STAFF_REF_PATH="/path/to/staff_ref.xlsx"
+
+Paths use pathlib (cross-platform). Upload/export dirs are under the project folder.
+================================================================================

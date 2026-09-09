@@ -1,0 +1,124 @@
+# Employee table column rules – FORM 8014
+# Applied during normalize after extract (native + scan)
+# Matching is case-insensitive
+
+version: 1
+
+columns:
+  no:
+    type: sequential
+    description: "Row index – keep from OCR/layout, no normalize"
+
+  full_name:
+    type: lookup
+    source: staff_ref          # lookup by Staff ID when from_ocr
+    description: "Prefer staff_ref.xlsx; native keeps parsed text"
+
+  staff_id:
+    type: pattern
+    pattern: "^VAE\\d{4,8}$"
+    description: "Staff id pattern VAExxxxx"
+
+  department:
+    type: enum_fuzzy
+    case_insensitive: true
+    # Treat D and Đ as equivalent; add new values to this list
+    values:
+      - PVBD
+      - NTHN
+      - NgTHN
+      - ĐHBD
+      - DHBD
+      - CNBDNT
+      - VP
+      - NGTHN
+      - AN
+      - CUVT
+      - TCNL
+      - KHKD
+      - TCKT
+      - NTHCM
+      - NgHCM
+      - ATCL
+      - TTDT
+      - CNĐN
+      - CNDN
+    normalize_d_to_base: true   # Đ <-> D
+    on_unknown: keep            # keep | empty | N/A
+
+  attendance_hours:
+    type: number_or_na
+    allow_float: true
+    allow_int: true
+    min: 0
+    na_tokens: ["N/A", "NA", "-", ""]
+    on_invalid: null
+
+  exam_pass:
+    type: enum
+    case_insensitive: true
+    values: ["1", "0", "N/A"]
+    map:
+      "1": 1
+      "0": 0
+      "N/A": null
+      "NA": null
+      "-": null
+    on_unknown: null
+
+  exam_fail:
+    type: enum
+    case_insensitive: true
+    values: ["1", "0", "N/A"]
+    map:
+      "1": 1
+      "0": 0
+      "N/A": null
+      "NA": null
+      "-": null
+    on_unknown: null
+
+  discipline_status:
+    type: enum
+    case_insensitive: true
+    values: ["No", "Yes", "N/A"]
+    map:
+      "no": "No"
+      "yes": "Yes"
+      "n/a": "N/A"
+      "na": "N/A"
+      "-": "N/A"
+    on_unknown: keep
+
+  course_result:
+    type: enum
+    case_insensitive: true
+    values: ["Completed", "Incompleted", "N/A"]
+    map:
+      "completed": "Completed"
+      "complete": "Completed"
+      "incompleted": "Incompleted"
+      "incomplete": "Incompleted"
+      "not completed": "Incompleted"
+      "notcompleted": "Incompleted"
+      "n/a": "N/A"
+      "na": "N/A"
+      "đạt": "Completed"
+      "dat": "Completed"
+      "không đạt": "Incompleted"
+      "khong dat": "Incompleted"
+      "pass": "Completed"
+      "fail": "Incompleted"
+    # If missing: derive from exam_pass / exam_fail
+    derive_from_exam: true
+    on_unknown: "N/A"
+
+  certificate_no:
+    type: string_or_na
+    na_tokens: ["N/A", "NA", "-"]
+    allow_any_string: true
+    on_empty: ""
+
+  remark:
+    type: free_text
+    allow_empty: true
